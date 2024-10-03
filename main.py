@@ -9,6 +9,7 @@ def main(cfg):
         return run(cfg)
     elif cfg.Method == "DBDSB":
         from run_dbdsb import run
+        print(cfg)
         return run(cfg)
     elif cfg.Method == "RF":
         from run_rf import run
