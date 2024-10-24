@@ -1,0 +1,22 @@
+name: dsb
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pytorch=2.0 # Replace with your desired version
+  - torchvision=0.15 # Replace with your desired version
+  # - cudatoolkit=11.7 # Adjust based on your GPU and CUDA version
+  - numpy<2
+  - scikit-learn
+  - matplotlib
+  - pandas
+  - scipy
+  - pillow
+  - tqdm
+  - pip
+  - pip:
+      - transformers # Optional, if you plan to use transformer-based models
+      - accelerate # For distributed training and mixed-precision
+      - datasets # Optional, for working with datasets
